@@ -4,7 +4,7 @@
 driver.get("크롤링하고싶은 url주소")
 
 # 크롤링한 데이터 저장할 변수
-prices = [] # 가격
+prices = [] # 가격 \
 rises = [] # 상승률
 
 # 크롤링 방법에는 여러가지가있는데 prices와 rises 태그같은경우 중복되는 
