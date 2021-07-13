@@ -11,7 +11,7 @@ for i in range(2, 80):
         rises.append(driver.find_element_by_xpath('//*[@id="contentarea"]/div[3]/table/tbody/tr['+str(i)+']/td[5]/span').text)
     except:
         continue
-names = driver.find_elements_by_class_name("tltle") #이미지 태그를 이용하여 이미지 정보 가져오기
+names = driver.find_elements_by_class_name("tltle") 
 for price,name,rise in zip(prices,names,rises):
     print(f"종목 : {name.text} 가격 : {price} 상승률 : {rise}")
 
